@@ -52,17 +52,19 @@ uvicorn api_service.fraud_api:app --reload
 The API will be available at:
 http://127.0.0.1:8000/docs (Swagger interface)
 
+```bash
 curl -X POST http://127.0.0.1:8000/predict \
   -H "Content-Type: application/json" \
   -d '{"amount": 3400, "transaction_count": 17, "card_count": 4}'
+```
 
 Key Dependencies
-mlflow – Model tracking and management
+- mlflow – Model tracking and management
 
-lightgbm – Fast and efficient ML model
+- lightgbm – Fast and efficient ML model
 
-fastapi – Serve the model via REST API
+- fastapi – Serve the model via REST API
 
-evidently – Drift detection and monitoring
+- evidently – Drift detection and monitoring
 
-pandas, scikit-learn – Data handling and metrics
+- pandas, scikit-learn – Data handling and metrics
