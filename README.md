@@ -20,7 +20,25 @@ fraud-detection-mlops/
 ├── requirements.txt # Python dependencies 
 └── README.md # This file
 
-
+fraud-detection-mlops/
+├── README.md
+├── .gitignore
+├── config/
+│   ├── mlflow_config.yaml
+│   └── aws_integration.yaml
+├── transforms/
+│   └── prepare_data.py
+├── notebooks/
+│   ├── train_model.ipynb
+│   ├── drift_detection.ipynb
+│   └── model_monitoring.ipynb
+├── api_service/
+│   └── fraud_api.py
+├── workflows/
+│   └── fraud_pipeline.yaml
+├── models/
+│   └── README.md
+└── requirements.txt
 ---
 
 ## MLOps Pipeline Overview
