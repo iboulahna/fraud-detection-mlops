@@ -2,7 +2,11 @@
 
 # Fraud Detection MLOps Pipeline — Palantir Foundry + AWS Integration
 
-![palantir sagemaker](https://github.com/user-attachments/assets/bfcc1b37-db9f-46aa-a10e-030a073eea52)
+
+
+![palantir connectivity](https://github.com/user-attachments/assets/1d465fcf-6478-4bd9-8794-c38612039831)
+
+
 
 
 This project implements a full **fraud detection pipeline** using a modern **MLOps architecture** combining **Palantir Foundry**, **Amazon SageMaker**, **MLflow**, and **Evidently AI**.
