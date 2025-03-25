@@ -8,12 +8,20 @@ This project implements a full **fraud detection pipeline** using a modern **MLO
 
 ## Project Structure
 
-fraud-detection-mlops/ ├── config/ # Configuration files for MLflow and AWS ├── transforms/ # Data transformation logic (Foundry Code Workbook) ├── notebooks/ # Notebooks for training, monitoring, and drift detection ├── api_service/ # REST API to serve the model ├── workflows/ # Foundry Workflow orchestration pipeline ├── models/ # Logical folder to store MLflow models ├── requirements.txt # Python dependencies └── README.md # This file
+fraud-detection-mlops/ 
+├── config/ # Configuration files for MLflow and AWS 
+├── transforms/ # Data transformation logic (Foundry Code Workbook) 
+├── notebooks/ # Notebooks for training, monitoring, and drift detection 
+├── api_service/ # REST API to serve the model 
+├── workflows/ # Foundry Workflow orchestration pipeline 
+├── models/ # Logical folder to store MLflow models 
+├── requirements.txt # Python dependencies 
+└── README.md # This file
 
 
 ---
 
-## 🚀 MLOps Pipeline Overview
+## MLOps Pipeline Overview
 
 | Step                          | Tools Used                                       |
 |------------------------------|--------------------------------------------------|
@@ -27,16 +35,19 @@ fraud-detection-mlops/ ├── config/ # Configuration files for MLflow and AW
 
 ---
 
-## ⚙️ Run the API locally
+## Run the API locally
 
 Make sure to install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
 Then run the API using Uvicorn:
 
+```bash
 uvicorn api_service.fraud_api:app --reload
+```
 
 The API will be available at:
 http://127.0.0.1:8000/docs (Swagger interface)
