@@ -8,38 +8,6 @@ This project implements a full **fraud detection pipeline** using a modern **MLO
 
 ---
 
-## Project Structure
-
-fraud-detection-mlops/ 
-├── config/ # Configuration files for MLflow and AWS 
-├── transforms/ # Data transformation logic (Foundry Code Workbook) 
-├── notebooks/ # Notebooks for training, monitoring, and drift detection 
-├── api_service/ # REST API to serve the model 
-├── workflows/ # Foundry Workflow orchestration pipeline 
-├── models/ # Logical folder to store MLflow models 
-├── requirements.txt # Python dependencies 
-└── README.md # This file
-
-fraud-detection-mlops/
-├── README.md
-├── .gitignore
-├── config/
-│   ├── mlflow_config.yaml
-│   └── aws_integration.yaml
-├── transforms/
-│   └── prepare_data.py
-├── notebooks/
-│   ├── train_model.ipynb
-│   ├── drift_detection.ipynb
-│   └── model_monitoring.ipynb
-├── api_service/
-│   └── fraud_api.py
-├── workflows/
-│   └── fraud_pipeline.yaml
-├── models/
-│   └── README.md
-└── requirements.txt
----
 
 ## MLOps Pipeline Overview
 
@@ -78,7 +46,8 @@ curl -X POST http://127.0.0.1:8000/predict \
   -d '{"amount": 3400, "transaction_count": 17, "card_count": 4}'
 ```
 
-Key Dependencies
+### Key Dependencies
+
 - mlflow – Model tracking and management
 
 - lightgbm – Fast and efficient ML model
